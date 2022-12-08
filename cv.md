@@ -1,5 +1,3 @@
-# [rsschool](https://app.rs.school/)
-
 # Nazgul Nurmatova
 
 ## Junior Frontend Developer

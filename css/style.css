@@ -41,6 +41,7 @@ body {
 
 .header__menu {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
     display: wrap;
@@ -77,16 +78,16 @@ body {
 
 .profile-wrap {
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
     justify-content: center;
-    gap: 80px;
     padding: 60px 0;
 
 }
 
 
 .profile__image {
-    width: 300px;
+    width: 50%;
 }
 
 .profile__image-img {
@@ -96,9 +97,10 @@ body {
 }
 
 .profile__text {
+    width: 50%;
     text-align: center;
     margin-top: 60px;
-    width: 400px;
+
 }
 
 .profile__title {
@@ -226,19 +228,101 @@ body {
     transition: color 0.5s;
 }
 
-.row-smol {
-    width: 1140px;
-    height: 3px;
-    background-color: rgb(181, 155, 202);
-    margin: 15px 0;
-}
-
 .contacts__link:hover {
     color: rgb(65, 48, 83);
 }
 
+.row-smol {
+    width: 60%;
+    height: 3px;
+    background-color: rgb(181, 155, 202);
+    margin: 15px 0;
+
+}
+
+.section__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.section__item {
+    position: relative;
+    padding-left: 30px;
+}
+
+.section__item::before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 0px;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgb(181, 155, 202);
+    border-radius: 50%;
+}
+
+.section__link {
+    text-decoration: none;
+    color: rgb(181, 155, 202);
+    transition: .3s;
+}
+
+.section__link:hover {
+    color: rgb(65, 48, 83);
+}
+
+.footer {
+    background: rgb(65, 48, 83);
+    padding: 20px;
+    color: azure;
+}
+
+.footer__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+.footer__data::after {
+    content: "";
+    margin: 0 10px;
+}
+
+.footer__link {
+    display: inline-block;
+    margin-right: 20px;
+    text-decoration: none;
+    color: azure;
+    transition: 0.5s;
+
+}
+
+.footer__link:hover {
+    transform: scale(1.2);
+}
+
+.footer__img {
+    width: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+
+@media screen and (max-width: 850px) {
+    .section {
+        padding: 5px;
+    }
+}
+
 @media (max-width: 768px) {
+
     .section {
         width: 100%;
+        padding: 20px;
     }
+
+
 }

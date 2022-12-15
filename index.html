@@ -15,13 +15,14 @@
     <div class="container">
       <nav class="header__nav">
         <ul class="header__menu">
-          <li class="header__item"><a class="header__nav-link" href="#contacts-summary">Contacts</a></li>
-          <li class="header__item"><a class="header__nav-link" href="#contacts-summary">Summary</a></li>
-          <li class="header__item"><a class="header__nav-link" href="#skills-code">Skills</a></li>
-          <li class="header__item"><a class="header__nav-link" href="#skills-code">Code</a></li>
-          <li class="header__item"><a class="header__nav-link" href="#">Projects</a></li>
-          <li class="header__item"><a class="header__nav-link" href="#">Education</a></li>
-          <li class="header__item"><a class="header__nav-link" href="#">English</a></li>
+          <li class="header__item"><a class="header__nav-link" href="#contacts">Contacts</a></li>
+          <li class="header__item"><a class="header__nav-link" href="#summary">Summary</a></li>
+          <li class="header__item"><a class="header__nav-link" href="#skills">Skills</a></li>
+          <li class="header__item"><a class="header__nav-link" href="#code">Code</a></li>
+          <li class="header__item"><a class="header__nav-link" href="#curses">Curses</a></li>
+          <li class="header__item"><a class="header__nav-link" href="#projects">Projects</a></li>
+          <li class="header__item"><a class="header__nav-link" href="#education">Education</a></li>
+          <li class="header__item"><a class="header__nav-link" href="#english">English</a></li>
         </ul>
       </nav>
     </div>
@@ -30,7 +31,7 @@
   <main class="main">
     <div class="container">
 
-      <section class="section__pfofile" id="profile">
+      <section class="section__profile" id="profile">
         <div class="profile-wrap">
           <div class="profile__image">
             <img class="profile__image-img" src="img/570.jpg" alt="Photo">
@@ -63,6 +64,7 @@
             </li>
             <li class="contacts-item">@Nazgul.Nurmatova</li>
           </ul>
+          <div class="row-smol"></div>
         </section>
 
         <section class="section" id="summary">
@@ -73,18 +75,19 @@
             becoming
             a
             proficient Frontend Developer.</p>
+          <div class="row-smol"></div>
         </section>
 
 
 
         <section class="section" id="skills">
           <h2 class="section__title">Skills</h2>
-          <ul class="skills__list">
-            <li class="skills__item">HTML5/CSS3</li>
-            <li class="skills__item">Figma for Frontend Developer</li>
-            <li class="skills__item">Git/Github</li>
-
+          <ul class="section__list">
+            <li class="section__item">HTML5/CSS3</li>
+            <li class="section__item">Figma for Frontend Developer</li>
+            <li class="section__item">Git/Github</li>
           </ul>
+          <div class="row-smol"></div>
         </section>
 
         <section class="section" id="code">
@@ -94,22 +97,85 @@
             <br>
             <code>console.log(3 ** 2); // => 9</code>
           </p>
+          <div class="row-smol"></div>
         </section>
+
+        <section class="section" id="cuorses">
+          <h2 class="section__title">Cuorses</h2>
+          <ul class="section__list">
+            <li class="section__item">HTML and CSS Tutorials on the<a class="section__link"
+                href="https://code-basics.com/ru" target="_blank">Code Basics</a></li>
+            <li class="section__item">HTML and CSS Tutorials on the<a class="section__link"
+                href="https://www.freecodecamp.org/" target="_blank">FreeCodeCamp</a></li>
+            <li class="section__item"><a class="section__link" href="" target="_blank">RS Schools Course
+                «JavaScript/Front-end. Stage
+                0»</a></li>
+          </ul>
+          <div class="row-smol"></div>
+        </section>
+
+        <section class="section" id="projects">
+          <h2 class="section__title">Projects</h2>
+          <ul class="section__list">
+            <li class="section__item"><a class="section__link"
+                href="https://www.freecodecamp.org/certification/fccf9027400-9fa6-47d6-b412-24140927598f/responsive-web-design"
+                target="_blank">Builda Survey Form</a>
+            </li>
+            <li class="section__item">
+              <a class="section__link"
+                href="https://www.freecodecamp.org/certification/fccf9027400-9fa6-47d6-b412-24140927598f/responsive-web-design"
+                target="_blank">Build a Tribute Page</a>
+            </li>
+            <li class="section__item">
+              <a class="section__link"
+                href="https://www.freecodecamp.org/certification/fccf9027400-9fa6-47d6-b412-24140927598f/responsive-web-design"
+                target="_blank">Build a Technical Documentation Page</a>
+            </li>
+            <li class="section__item">
+              <a class="section__link" href="http://127.0.0.1:5502/index.html" target="_blank">Build Portfolio
+                Webpage</a>
+            </li>
+            <li class="section__item">
+              <a class="section__link" href="http://127.0.0.1:5501/blogger.html" target="_blank">Build Blogger
+                Webpage</a>
+            </li>
+          </ul>
+          <div class="row-smol"></div>
+        </section>
+
+
+        <section class="section" id="education">
+          <h2 class="section__title">Education</h2>
+          <p>Kyrgyz State Academy of Law</p>
+          <div class="row-smol"></div>
+        </section>
+
+        <section class="section" id="english">
+          <h2 class="section__title">English</h2>
+          <p>A2 - Elementary</p>
+          <div class="row-smol"></div>
+        </section>
+
+
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
     </div>
   </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__wrap">
+        <div class="footer__col">
+          <time class="footer__data" datetime="2022-12-15">2022</time>
+          <a class="footer__link" href="https://github.com/nnazgul" target="_blank">nnazgul</a>
+        </div>
+        <div class="footer-col">
+          <a class="footer__link" href="https://app.rs.school/" target="_blank">
+            <img class="footer__img" src="img/rs-logo.png" alt="RSSchool Logo">
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
 
 
 </body>

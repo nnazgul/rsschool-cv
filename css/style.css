@@ -39,12 +39,12 @@ body {
 
 }
 
+
 .header__menu {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-end;
-    display: wrap;
     margin: 0;
 }
 
@@ -74,12 +74,14 @@ body {
 
 }
 
-
+.main {
+    position: relative;
+}
 
 .profile-wrap {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
+    align-items: center;
     justify-content: center;
     padding: 60px 0;
 
@@ -272,6 +274,22 @@ body {
     color: rgb(65, 48, 83);
 }
 
+.btn {
+    position: absolute;
+    bottom: 200px;
+    right: 400px;
+    transition: 0.3s ease;
+}
+
+.btn__img {
+    width: 60px;
+    height: 60px;
+}
+
+.btn:hover {
+    transform: scale(1.3);
+}
+
 .footer {
     background: rgb(65, 48, 83);
     padding: 20px;
@@ -310,10 +328,39 @@ body {
     border-radius: 5px;
 }
 
+@media screen and (max-width: 1440px) {
+    .profile-wrap {
+        padding: 60px 10px;
 
-@media screen and (max-width: 850px) {
+    }
+
+    .section {
+        padding: 10px;
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 100px;
+        right: 50px;
+    }
+}
+
+
+@media screen and (max-width: 870px) {
+
+    .profile-wrap {
+        padding: 60px 10px;
+
+    }
+
     .section {
         padding: 5px;
+    }
+
+    .btn {
+        position: absolute;
+        bottom: 100px;
+        right: 50px;
     }
 }
 
@@ -324,5 +371,29 @@ body {
         padding: 20px;
     }
 
+    .btn {
+        position: absolute;
+        bottom: 100px;
+        right: 50px;
+    }
 
+    .btn__img {
+        width: 40px;
+        height: 40px;
+    }
+
+
+}
+
+@media (max-width: 525px) {
+
+    .profile-wrap {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 0;
+
+    }
 }
